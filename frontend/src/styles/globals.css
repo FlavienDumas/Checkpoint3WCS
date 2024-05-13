@@ -13,3 +13,32 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #f5f5f5;
 }
+
+.clickable:hover {
+  cursor: pointer;
+  transition: 0.25s;
+  background-color: rgb(240, 240, 240);
+}
+
+@media (max-width: 775px) {
+  .countryForm {
+    flex-direction: column;
+    width: 95vw;
+  }
+  .countryContent {
+    margin: 10px 0;
+    width: 95%;
+  }
+  .countryContent button {
+    width: 95%;
+    font-size: 20px;
+  }
+}
+@media (min-width: 775px) {
+  .countryContent {
+    margin: 25px;
+  }
+  .countryContent button {
+    width: 60px
+  }
+}
